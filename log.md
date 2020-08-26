@@ -4,8 +4,8 @@
 ## JsonPathResultMatchers_Import_Error (p.76)
 : 76p에서 .andExpect(jsonPath("$.name", is(name))) .andExpect(jsonPath("$.amount", is(amount))); 부분에서 에러가 발생함.
 
-- ErrorMassage: 
-```
+- ErrorMessage: 
+``` java
 incompatible types: JsonPathResultMatchers cannot be converted to ResultMatcher .andExpect(jsonPath("$.name",is(name)))
 ```                
 로 출력되어 테스트를 진행할 수 없었음. 
@@ -18,5 +18,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 - Reference: https://youngsubee.tistory.com/entry/Spring-boot-JsonPathResultMatchers%EC%97%90%EB%9F%AC
 
-   
- 
+## p.97 .build error (Proceeding)
+
+- ErrorMessage
+: https://github.com/jojoldu/freelec-springboot2-webservice/issues/455 위 링크와 동일한 증상 발생. 
+
+
